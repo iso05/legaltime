@@ -14,4 +14,4 @@ Error generating stack: `+a.message+`
           object-contain
           select-none
           relative z-30
-          hidden md:block  `}),M.jsx("div",{})]})]})}function Ud(){return M.jsx("section",{id:"services",className:"bg-black h-80",children:"Services"})}function Nd(){return M.jsxs("div",{children:[M.jsx(pd,{}),M.jsx(Ud,{})]})}vd.createRoot(document.getElementById("root")).render(M.jsx(Xn.StrictMode,{children:M.jsx(Nd,{})}));
+          hidden md:block  `}),M.jsx("div",{className:"hidden lg:block"})]})]})}function Ud(){return M.jsx("section",{id:"services",className:"bg-black h-80",children:"Services"})}function Nd(){return M.jsxs("div",{children:[M.jsx(pd,{}),M.jsx(Ud,{})]})}vd.createRoot(document.getElementById("root")).render(M.jsx(Xn.StrictMode,{children:M.jsx(Nd,{})}));
