@@ -19,4 +19,4 @@ Error generating stack: `+a.message+`
                   absolute left-0 -bottom-2 h-[2px] w-full
                   bg-gradient-to-r from-white/70 to-transparent
                   opacity-100
-                `})]},v))]})]})}function T1(){return I.jsxs("section",{id:"home",className:"w-full h-screen bg-center  bg-cover overflow-hidden",style:{backgroundImage:`url(${r1})`},children:[I.jsx("div",{className:"absolute inset-0 bg-black/70"}),I.jsx(E1,{})]})}function A1(){return I.jsx("div",{children:I.jsx(T1,{})})}y1.createRoot(document.getElementById("root")).render(I.jsx(Xn.StrictMode,{children:I.jsx(A1,{})}));
+                `})]},v))]})]})}function T1(){return I.jsxs("section",{id:"home",className:"w-full min-h-screen bg-center  bg-cover overflow-hidden",style:{backgroundImage:`url(${r1})`},children:[I.jsx("div",{className:"absolute inset-0 bg-black/70"}),I.jsx(E1,{})]})}function A1(){return I.jsx("div",{children:I.jsx(T1,{})})}y1.createRoot(document.getElementById("root")).render(I.jsx(Xn.StrictMode,{children:I.jsx(A1,{})}));
