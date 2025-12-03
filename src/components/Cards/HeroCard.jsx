@@ -1,32 +1,36 @@
-import { GrDocumentText } from "react-icons/gr";
-import "../../Custom/Custom.css";
-import { RiCurrencyLine, RiScales3Line } from "react-icons/ri";
-import { FaMoneyCheckAlt } from "react-icons/fa";
+import { BsLightningCharge } from "react-icons/bs";
+import {  IoTimeOutline } from "react-icons/io5";
 function HeroCard() {
   return (
     <>
-      <div className="clipPath  md:w-1/2 w-full rounded-2xl h-full bg-white p-4 ">
-        <div className=" clipPath h-full border-2 border-[#D1AD84] border-dashed w-full  rounded-2xl ">
-          <div className="flex flex-col items-center justify-around  ">
-            <h1 className="text-center w-full">
-              <span className="text-[#D1AD84] lg:text-5xl md:text-xl  text-5xl">Юридические услуги</span> <br />
-              <span className="lg:text-5xl  md:text-xl text-3xl">c гарантией результата</span>
-            </h1>
-            <div className="flex flex-col md:w-10/12 w-3/4 gap-2 lg:text-lg  md:text-xs xs:text-lg  ">
-              <p className="flex items-center gap-3">
-                <GrDocumentText className="lg:text-[40px] md:text-[35px] text-[40px]"/> 
-                Определяем и обосновываем вероятность успеха до заключения
-              </p>
-              <p className="flex items-center gap-3">
-                <FaMoneyCheckAlt className="lg:text-[40px] md:text-[35px] text-[40px]"/>
-                Выигрываем суммы сверх оспариваемой и уплаченной нам</p>
-              <p className="flex items-center gap-3">
-                <RiScales3Line className="lg:text-[70px] md:text-[65px] text-[70px] "/>
-                Ведущие специалисты: адвокаты - кандидаты наук, федеральный
-                судья в отставке с опытом больше 15 лет
-              </p>
-              <div className="flex w-full justify-center py-3">
-              <button className="bg-red-900 w-3/5 lg:py-4 py-1.5 lg:text-lg text-xs rounded-lg cursor-pointer text-white ">Бесплатная консультация юриста</button>
+      <div className="lg:w-1/2 w-full bg-white rounded-3xl p-4 relative z-20">
+        <div className="h-full border-2 border-[#D1AD84] border-dashed w-full  rounded-xl p-6">
+          <div className="flex  flex-col gap-4 ">
+            <h3 className="text-3xl sm:text-4xl lg:text-5xl">
+              Горячая линия по оказанию юридической помощи онлайн
+            </h3>
+            <p className="text-lg leading-relaxed">
+              Профессиональная помощь доступна круглосуточно – заявки
+              обрабатываются в любое время дня и ночи. Обращаясь к специалистам
+              «100 Юристов», вы можете рассчитывать на прозрачные, понятные
+              условия сотрудничества
+            </p>
+            <div className="w-full flex justify-center">
+              <button className="cursor-pointer bg-[#350000] text-white px-5 py-3 rounded-lg">
+                Задать вопрос юристу
+              </button>
+            </div>
+
+            <div className="block md:hidden">
+              <div className="flex flex-wrap h-full items-center relative z-20 container mx-auto py-3  ">
+                <div className="w-1/2 flex gap-1.5 items-center ">
+                  <IoTimeOutline color="#33836E" size={25} />
+                  <span>Круглосуточно</span>
+                </div>
+                <div className="w-1/2 flex gap-1.5 items-center pl-4">
+                  <BsLightningCharge color="#33836E" size={25} />
+                  <span>Быстро</span>
+                </div>
               </div>
             </div>
           </div>
@@ -35,4 +39,5 @@ function HeroCard() {
     </>
   );
 }
+
 export default HeroCard;
