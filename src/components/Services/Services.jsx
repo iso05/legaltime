@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "../../Custom/Custom.css";
 import { items } from "./servisecData"; 
-import ServiceCard from "../Cards/ServiceCard";
+import ServiceCard from "./ServiceCard";
 
 function Services() {
   const [showAll, setShowAll] = useState(false); //for mobile 
