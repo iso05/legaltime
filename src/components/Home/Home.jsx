@@ -25,7 +25,7 @@ function Home() {
             text-5xl font-semibold leading-tight 
             mb-2 mt-3 text-center"
           >
-            Юридический консалтинг в Тюмени
+            Yuridik konsultant firma Toshkent shahrida
           </h3>
 
           
@@ -70,7 +70,7 @@ function Home() {
             group-hover:scale-105
           "
             >
-              Получить бесплатную консультацию
+              Tekin konsultatsiya olish
             </span>
 
             <span
@@ -105,7 +105,7 @@ function Home() {
             group-hover:scale-105
           "
             >
-              Отправить документы
+              Hujjatlarni yuborish
             </span>
 
             <span
