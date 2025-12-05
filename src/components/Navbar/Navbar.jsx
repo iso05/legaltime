@@ -16,47 +16,47 @@ function Navbar() {
   }, []);
 
   const menu = [
-    {litext: "Asosiy", link: "#home"},
-    {litext: "Hizmatlar", link: "#services"},
-    {litext:"Jamoa", link:"#"},
-    {litext:"Yangiliklar",link:"#"},
-    {litext:"Portfolio",link:"#"},
-    {litext:"Aloqa",link:"#"},
+    { litext: "Asosiy", link: "#home" },
+    { litext: "Hizmatlar", link: "#services" },
+    { litext: "Jamoa", link: "#" },
+    { litext: "Yangiliklar", link: "#" },
+    { litext: "Portfolio", link: "#" },
+    { litext: "Aloqa", link: "#" },
   ];
-  
+
   return (
     <>
       <header className="relative text-[#d4d4d3] items-center hidden lg:flex justify-between pt-2 z-10 container mx-auto  px-10 pb-2">
-
         <div className="flex gap-15  items-center">
           <div className="flex gap-1  items-center">
-            <MdOutlineLanguage size={20}/>
+            <MdOutlineLanguage size={20} />
             Uzbek
           </div>
           <div className="flex items-center gap-1.5">
-          г.Ташкент, ул.А.Навои, 30
-          <SiGooglemaps/>
+            г.Ташкент, ул.А.Навои, 30
+            <SiGooglemaps />
           </div>
         </div>
 
         <div className="flex items-center gap-15 ">
           <div className="flex items-center gap-1">
-            <FaPhoneFlip/>
+            <FaPhoneFlip />
             +998-93-777-77-77
           </div>
           <div className="flex items-center gap-1">
-            <MdOutlineMailOutline size={20}/>
-            <span>
-              isojurayev77@gmail.com
-            </span>
+            <MdOutlineMailOutline size={20} />
+            <span>isojurayev77@gmail.com</span>
           </div>
         </div>
-
       </header>
       <div className="w-full hidden lg:block  h-0.5 bg-linear-to-l from-[#FCFFD4] to-99.9% relative z-10"></div>
 
       <div className=" relative z-10 items-center container mx-auto  px-10  hidden md:flex justify-between    w-full pt-1 text-[#FCFFD4] text-lg ">
-        <img src={logo} alt="logotip"className="w-12 h-12 rounded-full object-cover"/>
+        <img
+          src={logo}
+          alt="logotip"
+          className="w-12 h-12 rounded-full object-cover"
+        />
         <nav className="lg:w-1/2 w-3/4">
           <ul className="flex justify-between items-center h-full gap-6 xl:gap-0">
             {menu.map((item) => (
@@ -102,27 +102,15 @@ function Navbar() {
           />
 
           {menu.map((item) => (
-            <a
-              key={item}
-              href={item.link}
-              className="relative group"
-              onClick={() => setOpen(false)}
-            >
-              {item.litext}
-
-              <span
-                className="
-                    absolute left-0 -bottom-2 h-0.5 w-full
-                    bg-linear-to-r from-white/70 to-transparent
-                    opacity-100
-                  "
-              ></span>
-            </a>
+            <li key={item.litext} className="relative group ">
+              <a href={item.link} className="block py-1">
+                {item.litext}
+              </a>
+              <span className="absolute left-0 -bottom-1 w-full h-1 bg-linear-to-r from-white/70 to-transparent transition-all duration-500"></span>
+            </li>
           ))}
         </div>
       )}
-
-
     </>
   );
 }
